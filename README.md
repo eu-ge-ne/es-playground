@@ -1,9 +1,9 @@
 es-playground
 =============
 
-Simple Node.js + @babel/preset-env playground that allows to test latest ECMAScript features
-Runs in Docker
-Includes debug launch config for VSCode
+Simple Node.js + @babel/preset-env playground that allows to test latest ECMAScript features.
+Runs in Docker.
+Includes debug launch config for VSCode.
 
 ###### [Install](#Install) | [Example](#Example) | [License](#License)
 
