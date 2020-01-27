@@ -2,6 +2,8 @@ es-playground
 =============
 
 Simple Node.js + @babel/preset-env playground that allows to test latest ECMAScript features
+Runs in Docker
+Includes debug launch config for VSCode
 
 ###### [Install](#Install) | [Example](#Example) | [License](#License)
 
@@ -17,8 +19,18 @@ $ npm install
 Example
 -------
 
+Start docker container:
+
 ```bash
-$ npm start
+$ docker-compose up
+```
+
+For debug, use `Docker` launch configuration in VSCode
+
+To stop, press `Ctrl-C`, then:
+
+```bash
+$ docker-compose down
 ```
 
 License

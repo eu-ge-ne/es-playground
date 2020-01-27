@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  es-playground:
+    build:
+      context: .
+    image: es-playground
+    command: npm run watch
+    ports:
+      - "9229:9229"
+    volumes:
+      - type: bind
+        source: ./src
+        target: /app/src
+        read_only: true

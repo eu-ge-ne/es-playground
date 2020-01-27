@@ -1,9 +1,13 @@
 {
   "name": "es-playground",
+  "private": true,
   "version": "1.0.0",
   "description": "Simple Node.js + @babel/preset-env playground that allows to test latest EcmaScript features",
   "scripts": {
-    "start": "nodemon -w src -V ./src/register.js"
+    "build": "babel src --out-dir out",
+    "prestart": "npm run build",
+    "start": "node --inspect=0.0.0.0:9229 --nolazy ./out/main.js",
+    "watch": "nodemon -w src -V --exec npm run start"
   },
   "repository": {
     "type": "git",
@@ -16,6 +20,7 @@
   },
   "homepage": "https://github.com/eu-ge-ne/es-playground#readme",
   "dependencies": {
+    "@babel/cli": "7.8.3",
     "@babel/core": "7.8.3",
     "@babel/preset-env": "7.8.3",
     "@babel/register": "7.8.3",
