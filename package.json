@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/eu-ge-ne/es-playground#readme",
   "dependencies": {
-    "@babel/cli": "7.8.3",
-    "@babel/core": "7.8.3",
-    "@babel/preset-env": "7.8.3",
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
     "@babel/register": "7.8.3",
     "core-js": "3.6.4",
     "nodemon": "2.0.2"
