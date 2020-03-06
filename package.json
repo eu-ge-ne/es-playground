@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "description": "Simple Node.js + @babel/preset-env playground that allows to test latest EcmaScript features",
   "scripts": {
-    "build": "babel src --out-dir out",
+    "build": "rimraf ./out/**/* && babel src --out-dir out",
     "prestart": "npm run build",
-    "start": "node --inspect=0.0.0.0:9229 --nolazy ./out/main.js",
-    "watch": "nodemon -w src -V --exec npm run start"
+    "start": "node --inspect=0.0.0.0 --nolazy --enable-source-maps ./out/main.js",
+    "watch": "nodemon --watch ./src --delay 10 --verbose --no-update-notifier --exec npm run start"
   },
   "repository": {
     "type": "git",
