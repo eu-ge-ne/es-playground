@@ -1,4 +1,5 @@
+import { now } from "./now";
+
 export function hello(name) {
-    const now = new Date();
-    console.log(`${now}: Hello ${name}`);
+    console.log(`${now()}: Hello ${name}`);
 }
