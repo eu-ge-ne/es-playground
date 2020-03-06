@@ -2,5 +2,7 @@ FROM node:12-slim
 
 WORKDIR /app
 
-COPY . /app
+COPY package*.json ./
 RUN npm install
+
+COPY . .
