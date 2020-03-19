@@ -7,7 +7,7 @@
     "build": "rimraf ./out/**/* && babel src --out-dir out",
     "prestart": "npm run build",
     "start": "node --inspect=0.0.0.0 --nolazy --enable-source-maps ./out/main.js",
-    "watch": "nodemon --watch ./src --delay 10 --verbose --no-update-notifier --exec npm run start"
+    "watch": "nodemon --watch ./src --delay 5 --verbose --no-update-notifier --exec npm run start"
   },
   "repository": {
     "type": "git",
