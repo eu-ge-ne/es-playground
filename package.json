@@ -22,9 +22,9 @@
   "dependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
-    "@babel/preset-env": "7.9.0",
+    "@babel/preset-env": "7.9.5",
     "core-js": "3.6.4",
-    "nodemon": "2.0.2",
+    "nodemon": "2.0.3",
     "rimraf": "3.0.2"
   }
 }
